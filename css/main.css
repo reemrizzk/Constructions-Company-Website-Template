@@ -1,0 +1,143 @@
+nav {
+    height: 64px;
+}
+.navbar-brand {
+    padding-top: 0 !important;
+    padding-bottom: 0 !important;
+    padding-left: 1%;
+}
+h1,
+h2,
+h3 {
+    font-family: "Roboto Condensed", sans-serif;
+}
+#logo {
+    height: 58px;
+}
+.text1,
+.text2,
+.jumbotron-button {
+    position: relative;
+    z-index: 3;
+}
+.text-gold {
+    color: #cc7f1b;
+}
+footer * {
+    font-weight: normal !important;
+}
+.bg-gold {
+    background-color: #cc7f1b;
+}
+a,
+a:hover,
+a:active,
+a:visited {
+    color: #937516;
+}
+.background-img {
+    min-height: 100%;
+    min-width: 1024px;
+    width: 100%;
+    height: auto;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: -1;
+}
+.featurette img {
+    width: 91%;
+    padding: 3%;
+    border: 2px solid #cc7f1b;
+}
+#anim-title {
+    display: block;
+}
+#contact-img {
+    width: 71%;
+    padding: 3%;
+    border: 2px solid #cc7f1b;
+}
+.gradient-bg {
+    background-image: linear-gradient(to right, rgba(255, 255, 245, 1), rgba(255, 255, 235, 0.5));
+}
+.featurette h2,
+.yellow-border {
+    display: inline-block;
+    padding-bottom: 5px;
+    width: auto !important;
+    border-bottom: 2px solid #cc7f1b;
+}
+#main-jumbotron {
+    position: relative;
+    padding-top: 96px;
+    border-radius: 0;
+    background-size: cover;
+    min-height: 440px;
+    background-color: rgba(0, 0, 0, 0) !important;
+}
+#team-list {
+    border-radius: 0;
+}
+#show-sm {
+    display: none;
+    position: relative;
+}
+#hide-sm {
+    opacity: 0;
+    display: block;
+    position: relative;
+}
+.animate1 {
+    position: relative;
+    opacity: 0;
+}
+@media screen and (max-width: 767px) {
+    .navbar-collapse {
+        background-color: rgba(30, 30, 30, 0.95) !important;
+    }
+    #main-jumbotron {
+        min-height: 300px;
+    }
+    .featurette img,
+    #contact-img {
+        display: none;
+    }
+    #anim-title {
+        display: none;
+    }
+}
+@media screen and (max-width: 570px) {
+    h1 {
+        font-size: 22px !important;
+    }
+    h2 {
+        font-size: 16px !important;
+    }
+    p,
+    button,
+    li {
+        font-size: 12px !important;
+    }
+}
+@media screen and (max-width: 575px) {
+    #show-sm {
+        display: block;
+    }
+    #hide-sm {
+        display: none;
+    }
+}
+@media screen and (max-width: 300px) {
+    h1 {
+        font-size: 16px !important;
+    }
+    h2 {
+        font-size: 12px !important;
+    }
+    p,
+    button,
+    li {
+        font-size: 9px !important;
+    }
+}

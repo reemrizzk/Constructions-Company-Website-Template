@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <meta name="description" content="Website description here" />
+        <meta name="keywords" content="website,keywords,here" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <link rel="stylesheet" href="css/bootstrap.min.css" />
+        <link rel="stylesheet" href="css/bootstrap-grid.min.css" />
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css" rel="stylesheet" />
+        <link rel="stylesheet" href="css/main.css" />
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@400;700&display=swap" rel="stylesheet" />
+        <style>
+            .textbox-border-bottom-gray {
+                padding: 8px;
+                border-style: none;
+                border-radius: 0px;
+                background-color: transparent;
+                border-bottom: 1px solid #bbbbbb;
+                outline: none;
+                margin-bottom: 16px;
+            }
+            .textbox-border-bottom-gray:focus {
+                border-color: #909090;
+                outline: none !important;
+            }
+        </style>
+        <script src="js/jquery.min.js"></script>
+        <script src="js/bootstrap.min.js"></script>
+        <script src="js/main.js"></script>
+        <title>Website</title>
+    </head>
+    <body>
+        <img alt="Background" class="background-img" src="images/background.JPG" />
+        <nav class="navbar navbar-expand-md fixed-top py-0 pl-0">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="#"><img id="logo" alt="Logo" src="images/Logo.png" /></a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar01">
+                    <span class="text-light" style="font-size: 33px;">&equiv;</span>
+                </button>
+                <div class="collapse navbar-collapse pl-2 ml-2" id="navbar01">
+                    <ul class="navbar-nav ml-auto">
+                        <li class="nav-item"><a id="menu-about" class="nav-link text-light" href="javascript:void(0)">About</a></li>
+                        <li class="nav-item"><a id="menu-team" class="nav-link text-light" href="javascript:void(0">Team</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+
+        <section id="main-jumbotron" class="jumbotron text-dark text-left">
+            <div class="container">
+                <h1 id="jumbotron-heading" class="text1 text-light text-small">
+                    <span class="text-gold">F</span>IRST HEADING HERE<br />
+                    <span class="text-gold">H</span>EADING LINE 2<br />
+                    <span class="text-gold">H</span>EADING LINE 3
+                </h1>
+                <h1 id="jumbotron-heading" class="text2 text-light text-small" style="display: none;">
+                    <span class="text-gold">S</span>ECOND HEADING HERE<br />
+                    <span class="text-gold">H</span>EADING LINE 2<br />
+                    <span class="text-gold">H</span>EADING LINE Line 3
+                </h1>
+                <button type="button" class="btn bg-gold text-light my-1 jumbotron-button">Learn More</button>
+            </div>
+        </section>
+        <div class="container-fluid bg-light pt-4">
+            <div class="container">
+                <div class="row featurette" id="about">
+                    <div class="col-md-7 order-md-2">
+                        <h2 class="featurette-heading"><i class="bi-info-circle"></i> ABOUT <span class="text-gold">US</span></h2>
+                        <p class="lead">About us text here</p>
+                        <button type="button" class="btn bg-gold mb-4">Read more <i class="bi-chevron-right"></i></button>
+                    </div>
+                    <div class="col-md-5 order-md-1 pr-md-5">
+                        <img alt="about-image" src="images/about-image.JPG" />
+                    </div>
+                </div>
+
+                <hr class="featurette-divider" />
+
+                <div class="row featurette">
+                    <div class="col-md-7">
+                        <h2 class="featurette-heading"><i class="bi-globe"></i> OUR <span class="text-gold">SERVICES</span></h2>
+                        <ul>
+                            <li class="lead">Service name</li>
+                            <li class="lead">Service name</li>
+                            <li class="lead">Service name</li>
+                            <li class="lead">Service name</li>
+                        </ul>
+                        <button type="button" class="btn bg-gold mb-4">Read more <i class="bi-chevron-right"></i></button>
+                    </div>
+                    <div class="col-md-5 pl-md-5 text-md-right">
+                        <img alt="services-image" src="images/services-image.JPG" />
+                    </div>
+                </div>
+
+                <hr class="featurette-divider" />
+            </div>
+        </div>
+        <div class="container-fluid py-3" id="team-list">
+            <div class="container">
+                <div class="text-center" id="show-sm">
+                    <h2 class="yellow-border mb-5 text-light"><i class="bi-person"></i> MEET OUR <span class="text-gold">TEAM</span></h2>
+                </div>
+                <div class="row text-center text-light Team">
+                    <div class="col-sm-4">
+                        <div class="team-details animate1">
+                            <img alt="Team photo" src="images/team-example.png" />
+                            <h2>Name Here</h2>
+                            <p>CEO</p>
+                        </div>
+                    </div>
+                    <div class="col-sm-4">
+                        <h2 id="hide-sm" class="yellow-border mb-2 text-light"><i class="bi-person"></i> MEET OUR <span class="text-gold">TEAM</span></h2>
+                        <h3 id="anim-title">Over <span id="anim-number"></span> team members</h3>
+                    </div>
+                    <div class="col-sm-4">
+                        <div class="team-details animate1">
+                            <img alt="Team photo" src="images/team-example.png" />
+                            <h2>Name Here</h2>
+                            <p>Managing Director</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="row text-center Team text-light">
+                    <div class="col-sm-4">
+                        <div class="team-details animate1">
+                            <img alt="Team photo" src="images/team-example.png" />
+                            <h2>Name Here</h2>
+                            <p>Co-Founder</p>
+                        </div>
+                    </div>
+
+                    <div class="col-sm-4">
+                        <div class="team-details animate1">
+                            <img alt="Team photo" src="images/team-example.png" />
+                            <h2>Name Here</h2>
+                            <p>Project Manager</p>
+                        </div>
+                    </div>
+                    <div class="col-sm-4">
+                        <div class="team-details animate1">
+                            <img alt="Team photo" src="images/team-example.png" />
+                            <h2>Name Here</h2>
+                            <p>Head of Operations</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="container-fluid py-3 bg-light">
+            <div class="container text-center">
+                <h2 class="yellow-border mb-5"><i class="bi-people"></i> OUR <span class="text-gold">PARTNERS</span></h2>
+                <div class="row">
+                    <div class="col-2"><img style="width: 99%; margin: auto;" alt="Partner" src="images/partner-example.png" /></div>
+                    <div class="col-2"><img style="width: 99%; margin: auto;" alt="Partner" src="images/partner-example.png" /></div>
+                    <div class="col-2"><img style="width: 99%; margin: auto;" alt="Partner" src="images/partner-example.png" /></div>
+                    <div class="col-2"><img style="width: 99%; margin: auto;" alt="Partner" src="images/partner-example.png" /></div>
+                    <div class="col-2"><img style="width: 99%; margin: auto;" alt="Partner" src="images/partner-example.png" /></div>
+                    <div class="col-2"><img style="width: 99%; margin: auto;" alt="Partner" src="images/partner-example.png" /></div>
+                </div>
+            </div>
+        </div>
+
+        <div class="container-fluid py-3 gradient-bg">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-7">
+                        <h2 class="yellow-border mb-5"><i class="bi-envelope"></i> GET IN <span class="text-gold">TOUCH</span></h2>
+
+                        <div class="form-group">
+                            <input type="text" class="form-control textbox-border-bottom-gray" id="contact-name" placeholder="Your Name" />
+                            <input type="email" class="form-control textbox-border-bottom-gray" id="contact-email" placeholder="Your Email" />
+                            <textarea class="form-control textbox-border-bottom-gray" id="contact-message" placeholder="Message"></textarea>
+                            <button type="button" class="btn bg-gold mb-4 text-light"><i class="bi-send"></i> Send</button>
+                        </div>
+                    </div>
+                    <div class="col-md-5">
+                        <img id="contact-img" alt="" src="images/about-image.jpg" />
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <footer class="text-center text-lg-start text-light" style="background-color: rgba(10, 10, 10, 0.8);">
+            <section class="d-flex justify-content-center justify-content-lg-between p-2 border-bottom">
+                <div>
+                    <a href="" class="text-decoration-none text-light">
+                        <i class="bi-facebook"></i>
+                    </a>
+                    <a href="" class="text-decoration-none text-light">
+                        <i class="bi-instagram"></i>
+                    </a>
+                    <a href="" class="text-decoration-none text-light">
+                        <i class="bi-twitter"></i>
+                    </a>
+                </div>
+            </section>
+            <section class="">
+                <div class="container text-sm-left text-xs-center text-md-start mt-5">
+                    <div class="row mt-3">
+                        <div class="col-md-3 col-sm-12">
+                            <h5>Contact Us</h5>
+                            <small class="d-block mb-3">
+                                <i class="bi-envelope"></i> (Email address)<br />
+                                <i class="bi-phone"></i> (Phone number)
+                            </small>
+                        </div>
+                        <div class="col-md-3 col-sm-4 col-xs-12">
+                            <h5>Heading</h5>
+                            <ul class="list-unstyled text-small">
+                                <li><a class="text-light" href="#">Link</a></li>
+                                <li><a class="text-light" href="#">Link</a></li>
+                                <li><a class="text-light" href="#">Link</a></li>
+                                <li><a class="text-light" href="#">Link</a></li>
+                            </ul>
+                        </div>
+                        <div class="col-md-3 col-sm-4 col-xs-12">
+                            <h5>Heading</h5>
+                            <ul class="list-unstyled text-small">
+                                <li><a class="text-light" href="#">Link</a></li>
+                                <li><a class="text-light" href="#">Link</a></li>
+                                <li><a class="text-light" href="#">Link</a></li>
+                                <li><a class="text-light" href="#">Link</a></li>
+                            </ul>
+                        </div>
+                        <div class="col-md-3 col-sm-4 col-xs-12">
+                            <h5>Heading</h5>
+                            <ul class="list-unstyled text-small">
+                                <li><a class="text-light" href="#">Link</a></li>
+                                <li><a class="text-light" href="#">Link</a></li>
+                                <li><a class="text-light" href="#">Link</a></li>
+                                <li><a class="text-light" href="#">Link</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <div class="text-center p-4" style="background-color: rgba(0, 0, 0, 0.05);">
+                © 2022 Website. All Rights Reserved
+            </div>
+        </footer>
+    </body>
+</html>
